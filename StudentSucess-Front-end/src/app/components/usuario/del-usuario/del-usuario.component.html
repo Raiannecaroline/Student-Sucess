@@ -1,0 +1,50 @@
+<header class="header">
+  <a class="navbar-logo" routerLink="/home">
+    <img id="logo"
+      src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284"
+      alt="SoulCode Academy"
+      srcset="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:120/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284">
+  </a>
+</header>
+
+<div class="flex-container">
+  <mat-card class="form">
+    <form action="" id="main-form">
+      <h2>Excluir usuário</h2>
+      <mat-form-field appearance="outline">
+        <mat-label> Nome </mat-label>
+        <input [disabled]="true" type="text" matInput name="nome" [(ngModel)]="usuario.nome">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Matricula</mat-label>
+        <input [disabled]="true" type="text" matInput name="matricula" [(ngModel)]="usuario.matricula">
+        <mat-error>
+          Este campo é obrigatório
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>E-mail </mat-label>
+        <input [disabled]="true" type="text" matInput name="emailSoulCode" [(ngModel)]="usuario.emailSoulCode">
+        <mat-error>
+          Este campo é obrigatório
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Senha</mat-label>
+        <input [disabled]="true" type="password" matInput name="senha" [(ngModel)]="usuario.senha">
+        <mat-error>
+          Este campo é obrigatório
+        </mat-error>
+      </mat-form-field>
+
+      <button class="btn" (click)="deletarUsuario(usuario.matricula)" mat-raised-button color="warn" type="submit"
+        style="margin-top: 10px;">Apagar</button>
+      <button class="btn" mat-raised-button color="primary" style="margin-top: 10px;" type="button"
+        routerLink="/usuario/lista-usuario">Cancelar</button>
+
+    </form>
+  </mat-card>
+</div>

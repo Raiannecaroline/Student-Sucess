@@ -1,0 +1,95 @@
+.navbar-logo {
+  max-width: 250px;
+  display: flex;
+}
+
+.header .navbar-logo img {
+  height: auto;
+  max-width: 100%;
+}
+
+.header {
+  height: 60px;
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%);
+  display: flex;
+  justify-content: center;
+  margin-top: -36px;
+}
+
+#logo {
+  margin: 0;
+}
+
+#main-form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  width: 400px;
+  height: auto;
+
+}
+
+/* #file-input {
+  display: none;
+} */
+
+.btn {
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-right: 45px;
+}
+
+/* .container {
+  width: 35rem;
+  margin: auto;
+  padding: 1rem;
+  border-radius: .6rem;
+} */
+
+/* .fullWidth {
+  width: 100%;
+} */
+
+h1 {
+  text-align: center;
+}
+
+/* img {
+  height: 12rem;
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+} */
+
+button {
+  margin-top: .5rem;
+  margin-right: 20px
+}
+
+/* p {
+  margin-top: 4rem;
+  opacity: .5;
+} */
+
+mat-icon {
+  opacity: .8;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  border-radius: 60px;
+}

@@ -1,0 +1,68 @@
+.navbar-logo {
+  max-width: 250px;
+  display: flex;
+}
+
+.header .navbar-logo img {
+  height: auto;
+  max-width: 100%;
+}
+
+.header {
+  height: 60px;
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%);
+  display: flex;
+  justify-content: center;
+  margin-top: -36px;
+}
+
+#logo {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+}
+
+.btn {
+  width: 200px;
+}
+
+button {
+  margin-top: .5rem;
+}
+
+mat-icon {
+  opacity: .8;
+  display: flex;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+}
+
+.flex-card{
+  text-align: center;
+  margin-top: 30px;
+  background-color: aliceblue;
+  margin: 41px;
+  border-radius: 38px;
+  padding: 30px;
+  width: 600px;
+  margin-bottom: -10px;  
+}
+
+.aluno-card{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 30px;
+  background-color: aliceblue;
+  margin: 41px;
+  border-radius: 38px;
+  padding: 30px;  
+}

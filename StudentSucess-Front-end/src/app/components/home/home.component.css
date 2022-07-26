@@ -1,0 +1,72 @@
+.navbar-logo {
+    max-width: 250px;
+    display: flex;
+}
+
+.header .navbar-logo img {
+    height: auto;
+    max-width: 100%;
+}
+
+.header {
+    height: 60px;
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%);
+    display: flex;
+    justify-content: center;
+    margin-top: -36px;
+}
+
+#logo {
+    margin: 0;
+}
+
+.card {
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 20px;
+    background: linear-gradient(-540deg, #0F637A 0%, #0F637A 100%);
+}
+
+#cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.cards-x {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.imagem {
+    width: 180px;
+    height: 150px;
+    border: 1px solid #0F637A;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+p {
+    text-align: center;
+    font-size: large;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.imagem {
+    transition: 0.5s;
+}
+
+.imagem:hover {
+    transform: scale(1.1);
+}

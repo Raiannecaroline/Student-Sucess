@@ -1,0 +1,53 @@
+<header class="header">
+  <a class="navbar-logo" routerLink="/home">
+    <img id="logo"
+      src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284"
+      alt="SoulCode Academy"
+      srcset="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:120/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284">
+  </a>
+</header>
+
+<div class="flex-container">
+  <button mat-mini-fab color="primary" routerLink="/questoes/lista-questao">
+    <mat-icon>
+      arrow_left
+    </mat-icon>
+  </button>
+
+  <mat-card class="form">
+    <form action="" id="main-form" [formGroup]="formulario">
+      <h1>Cadastrar questão</h1>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Enunciado da questão</mat-label>
+        <input type="text" matInput formControlName="enunciado" name="enunciado" [(ngModel)]="novaQuestao.enunciado">
+        <mat-error>
+          Este campo é obrigatório
+        </mat-error>
+      </mat-form-field>
+
+   
+
+      <form action="" id="main-form1" [formGroup]="formularioAlternativas">
+
+        <mat-form-field appearance="outline">
+          <mat-label>Resposta</mat-label>
+          <input type="text" matInput formControlName="alternativa" name="alternativa" [(ngModel)]="alternativa">
+        </mat-form-field>
+
+        <span *ngFor="let alternativa of novaQuestao.alternativas; let i = index">
+          {{alternativa}}
+          <button class="trash" mat-mini-fab color="warn" type="button" (keyup.enter)="prevent($event)" (click)="deletarAtividade(i,1)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </span>
+
+        <button class="btn" mat-raised-button color="warn" type="submit" style="margin-top: 10px;"
+          (click)="cadastrarAlternativa()">Adicionar resposta</button>
+        <button class="btn" mat-raised-button color="primary" type="submit" style="margin-top: -29px;"
+          [disabled]="!validarCampos()" (click)="criarQuestao()">Criar</button>
+      </form>
+
+    </form>
+  </mat-card>
+</div>

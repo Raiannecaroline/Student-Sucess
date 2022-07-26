@@ -1,0 +1,76 @@
+<header class="header">
+   <a class="navbar-logo" routerLink="/home">
+      <img id="logo"
+         src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284"
+         alt="SoulCode Academy"
+         srcset="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:120/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284">
+   </a>
+</header>
+
+<mat-card class="card">
+   <h1>Empresas Parceiras</h1>
+   <button routerLink="/empresa/nova-empresa" class="mat-elevation-z8" mat-stroked-button color="primary">Cadastrar
+      Empresa</button>
+
+   <mat-form-field appearance="standard">
+      <mat-label>Pesquisar</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+   </mat-form-field>
+
+   <div class="mat-elevation-z8">
+
+      <table mat-table [dataSource]="dataSource">
+
+         <ng-container matColumnDef="nome">
+            <th mat-header-cell *matHeaderCellDef>
+               <h3> Nome da Empresa </h3>
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="nomeRepresentante">
+            <th mat-header-cell *matHeaderCellDef>
+               <h3> Contato </h3>
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.nomeRepresentante}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="cnpj">
+            <th mat-header-cell *matHeaderCellDef>
+               <h3> CNPJ </h3>
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.cnpj | cnpj }} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef>
+               <h3> E-mail </h3>
+            </th>
+            <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+         </ng-container>
+
+         <ng-container matColumnDef="acoes">
+            <th mat-header-cell *matHeaderCellDef>
+               <h3> Ações </h3>
+            </th>
+            <td mat-cell *matCellDef="let element">
+               <a routerLink="/empresa/editar-empresa/{{element.cnpj}}">
+                  <i class="material-icons edit">edit</i>
+               </a>
+               <a routerLink="/empresa/delete-empresa/{{element.cnpj }}">
+                  <i class="material-icons delete">delete</i>
+               </a>
+               <a routerLink="/empresa/info-empresa/{{element.cnpj }}">
+                  <i class="material-icons visibility">visibility</i>
+               </a>
+            </td>
+         </ng-container>
+
+         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[5, 2, 10, 20, 50, 100]" showFirstLastButtons></mat-paginator>
+   </div>
+
+</mat-card>

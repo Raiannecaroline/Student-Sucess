@@ -1,0 +1,44 @@
+.container {
+  height: 100%;
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(37,97,207,1) 0%, rgba(0,212,255,1) 100%);
+  
+}
+
+.sidenav {
+  width: 13rem;
+  color: rgb(249, 245, 245);
+  background: linear-gradient(92deg, #0F637A 0%, #50bcd9 100%, #FFD900 0%);
+}
+
+img {
+  width: 67%;
+  display: flex;
+  align-items: center;
+  margin-left: 33px;
+}
+
+.sidenav a {
+  color: white;
+}
+
+.sidenav i {
+  margin-right: .6rem;
+}
+
+.menu {
+  margin: 1rem 0 0 1rem;
+  color: white;
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(37,97,207,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+@keyframes colors{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}

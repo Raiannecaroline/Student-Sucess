@@ -1,0 +1,70 @@
+.navbar-logo {
+    max-width: 250px;
+    display: flex;
+  }
+  
+  .header .navbar-logo img {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .header {
+    height: 60px;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%);
+    display: flex;
+    justify-content: center;
+    margin-top: -36px;
+  }
+  
+  #logo {
+    margin: 0;
+  }
+  
+  #main-form {
+    display: flex;
+    flex-direction: column;
+    width: 422px;
+    gap: 10px;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 45px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  button {
+    margin-top: .5rem;
+    margin-right: 20px;
+  }
+  
+  mat-icon {
+    opacity: .8;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    width: 534px;
+    border-radius: 60px;     
+  }
+
+  .botao {
+      width: 10px;
+  }
+
+  .trash {
+    margin: 4px;
+  }

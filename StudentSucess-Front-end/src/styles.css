@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+html, body { 
+  height: 100%;
+}
+
+body { 
+  margin: 0; 
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+@keyframes colors{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 50% 0%;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

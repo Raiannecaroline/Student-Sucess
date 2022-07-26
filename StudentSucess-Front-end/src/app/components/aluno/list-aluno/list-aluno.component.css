@@ -1,0 +1,67 @@
+.navbar-logo {
+  max-width: 250px;
+  display: flex;
+}
+
+.header .navbar-logo img {
+  height: auto;
+  max-width: 100%;
+}
+
+.header {
+  height: 60px;
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%);
+  display: flex;
+  justify-content:center;
+  margin-top: -36px;
+}
+
+#logo {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.edit {
+  color: rgb(0, 153, 255);
+  margin-right: 10px;
+}
+
+.delete {
+  color: red;
+  margin-right: 10px;
+}
+
+.card {
+  background-color: aliceblue;
+  margin: 41px;
+  border-radius: 38px;
+  padding: 30px;
+}
+
+mat-radio-group {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}

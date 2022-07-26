@@ -1,0 +1,76 @@
+<header class="header">
+  <a class="navbar-logo" routerLink="/home">
+  <img id="logo" src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284" alt="SoulCode Academy" srcset="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:120/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284">
+  </a>
+</header>
+<mat-card class="card">
+
+    <h1>Lista de Alunos</h1>
+
+    <button routerLink="/aluno/novo-aluno" class="mat-elevation-z8" mat-stroked-button color="primary">Cadastrar Aluno</button>
+
+    <mat-form-field appearance="standard">
+       <mat-label>Pesquisar</mat-label>
+       <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+     </mat-form-field>
+
+
+     <mat-radio-group color="primary">
+      <mat-radio-button (click)="findAll()" >TODOS</mat-radio-button>
+       <mat-radio-button *ngFor="let turma of camposDaTurma" (click)="orderByTurma(turma)" value="0">{{turma}}</mat-radio-button>
+      </mat-radio-group>
+
+     <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource">
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef><h3> Nome </h3></th>
+          <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="parceiro">
+          <th mat-header-cell *matHeaderCellDef><h3> Empresa </h3></th>
+          <td mat-cell *matCellDef="let element"> {{element.parceiroNome}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="dataContratacao">
+          <th mat-header-cell *matHeaderCellDef><h3> Data da Contratação </h3></th>
+          <td mat-cell *matCellDef="let element"> {{element.dataContratacao | date: 'dd/MM/yyyy' }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="turma">
+          <th mat-header-cell *matHeaderCellDef><h3> Curso </h3></th>
+          <td mat-cell *matCellDef="let element"> {{element.turma }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="dataDesligamento">
+          <th mat-header-cell *matHeaderCellDef><h3> Status </h3></th>
+          <td mat-cell *matCellDef="let element"> {{ element.dataDesligamento == null ? "Trabalhando" : "Desligado" }} </td>
+        </ng-container>
+
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef><h3> Ações </h3></th>
+            <td mat-cell *matCellDef="let element">
+               <a routerLink="/aluno/editar-aluno/{{ element.cpf }}">
+                  <i class="material-icons edit">edit</i>
+               </a>
+               <a routerLink="/aluno/delete-aluno/{{ element.cpf }}">
+                  <i class="material-icons delete">delete</i>
+               </a>
+               <a routerLink="/aluno/info-aluno/{{element.cpf }}">
+                <i class="material-icons visibility">visibility</i>
+             </a>
+            </td>
+         </ng-container>
+
+         <tr mat-header-row *matHeaderRowDef="columns"></tr>
+         <tr mat-row *matRowDef="let row; columns: columns;"></tr>
+        </table>
+
+        <mat-paginator [pageSizeOptions]="[5, 2, 10, 20, 50, 100]" showFirstLastButtons></mat-paginator>
+    </div>
+    </mat-card>

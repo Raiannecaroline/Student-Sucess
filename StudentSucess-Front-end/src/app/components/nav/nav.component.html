@@ -1,0 +1,57 @@
+<mat-drawer-container class="container" autosize>
+   <mat-drawer #drawer class="sidenav" mode="side">
+
+
+    <a  routerLink="/home">
+
+       <img src="https://i.ibb.co/sWBS95N/SC.png" alt="Imagem de navegação" routerLink="/home" poin>
+</a>
+       <mat-nav-list class="nav-list">
+           <a mat-list-item routerLink="home">
+               <i class="material-icons">home</i>
+               Home
+            </a>
+
+            <a mat-list-item routerLink="aluno/lista-aluno">
+               <i class="material-icons">person</i>
+               Alunos
+            </a>
+            <a mat-list-item routerLink="empresa/lista-empresa">
+               <i class="material-icons">location_city</i>
+               Empresas
+            </a>
+            <a mat-list-item routerLink="usuario/lista-usuario">
+               <i class="material-icons">groups</i>
+               Usuários
+            </a>
+            <a mat-list-item  routerLink="questoes/lista-questao">
+               <i class="material-icons">quiz</i>
+               Questões
+            </a>
+            <a mat-list-item  routerLink="formulario/lista-formulario">
+               <i class="material-icons">feed</i>
+               Formulários
+            </a>
+           
+ 
+
+            <a mat-list-item (click)="logout()">
+             <i class="material-icons">logout</i>
+             Sair
+          </a>
+
+
+
+       </mat-nav-list>
+
+   </mat-drawer>
+
+   <div class="example-sidenav-content">
+
+     <button class="menu mat-elevaton-z8" mat-button (click)="drawer.toggle()" mat-icon-button>
+         <mat-icon>menu</mat-icon>
+     </button>
+     <router-outlet></router-outlet>
+   </div>
+
+ </mat-drawer-container>

@@ -1,0 +1,58 @@
+<header class="header">
+  <a class="navbar-logo" routerLink="/home">
+    <img id="logo"
+      src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284"
+      alt="SoulCode Academy"
+      srcset="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:120/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284">
+  </a>
+</header>
+
+<div class="flex-container">
+  <button mat-mini-fab color="primary" routerLink="/empresa/lista-empresa">
+    <mat-icon>
+      arrow_left
+    </mat-icon>
+  </button>
+
+  <mat-card class="form">
+    <form action="" id="main-form" [formGroup]="formulario" (ngSubmit)="criarEmpresa()">
+      <h1>Cadastro de Empresa</h1>
+      <mat-form-field appearance="outline">
+        <mat-label>Nome da Empresa</mat-label>
+        <input type="text" matInput formControlName="nome" name="nome" [(ngModel)]="empresa.nome">
+        <mat-error>
+          Este campo é obrigatório
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>CNPJ da Empresa</mat-label>
+        <input type="text" matInput formControlName="cnpj" name="cnpj" mask="00.000.000/0000-00"
+          [(ngModel)]="empresa.cnpj">
+        <mat-error>
+          Este campo é obrigatório
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>E-mail da Empresa </mat-label>
+        <input type="text" matInput formControlName="email" name="email" [(ngModel)]="empresa.email">
+        <mat-error>
+          Este campo é obrigatório
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Nome do Representante da Empresa</mat-label>
+        <input type="text" matInput formControlName="nomeRepresentante" name="nomeRepresentante"
+          [(ngModel)]="empresa.nomeRepresentante">
+        <mat-error>
+          Este campo é obrigatório
+        </mat-error>
+      </mat-form-field>
+      <button class="btn" mat-raised-button color="primary" type="submit" style="margin-top: 10px;"
+        [disabled]="!validarCampos()">Cadastrar</button>
+
+    </form>
+  </mat-card>
+</div>

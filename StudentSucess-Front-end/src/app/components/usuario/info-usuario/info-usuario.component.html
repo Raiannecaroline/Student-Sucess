@@ -1,0 +1,41 @@
+<header class="header">
+  <a class="navbar-logo" routerLink="/home">
+    <img id="logo"
+      src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284"
+      alt="SoulCode Academy"
+      srcset="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:120/https://file-uploads.teachablecdn.com/cafdd5e23ede4e52b0b3c293024bcbf1/a1de44835f9c41309464ba4c42d99284">
+  </a>
+</header>
+
+<div class="flex-container">
+  <button mat-mini-fab color="primary" routerLink="/usuario/lista-usuario">
+    <mat-icon>
+      arrow_left
+    </mat-icon>
+  </button>
+
+  <mat-card class="flex-card">
+    <mat-card-content>
+      <mat-card-title>{{usuario.nome}}</mat-card-title>
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-card-subtitle>Matricula do Usuario:</mat-card-subtitle>
+      {{usuario.matricula}}
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-card-subtitle>E-mail do Usuario:</mat-card-subtitle>
+      {{usuario.emailSoulCode}}
+    </mat-card-content>
+
+   
+
+    <button class="btn" routerLink="/usuario/editar-usuario/{{usuario.matricula}}" mat-raised-button color="primary"
+      type="submit" style="margin-top: 10px;">Editar</button>
+    <!-- <button class="btn" routerLink="/usuario/delete-usuario/{{usuario.matricula}}" mat-raised-button color="warn" type="submit"
+      style="margin-top: 10px;">Apagar</button>
+    <button class="btn" routerLink="/usuario/lista-usuario" mat-raised-button color="primary" type="button"
+      style="margin-top: 10px;">Cancelar</button> -->
+  </mat-card>
+</div>
