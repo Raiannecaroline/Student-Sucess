@@ -13,49 +13,46 @@ Desenvolvemos esse projeto com o objetivo de auxiliar a gerência na tomada de d
 
 - `Nav-bar`: Ao lado de cada página será possivel encontrar uma nav-bar, que te direcionará a cada parte da aplicação, a qualquer momento. Ademais, é possivel notar a presença de um botão ao lado da nav-bar, a partir dele é possivel esconder/mostrar a nav-bar. Vale a pena ressaltar, que ao clicar na ultima opção 'sair' o usuário desloga da aplicação e é redirecionado a lágina de login, onde vai precisar fazer a autenticação na aplicação novamente caso queira voltar a usar o sistema.
  
-  <img src="https://user-images.githubusercontent.com/98817915/170259757-5a82caaf-b0fd-414f-b88d-dce4da115939.png" alt="Nav-bar" width="200" height="300">
+  
   
  <br>
 
 - `Home`: Na pagina 'home' é possivel ser redirecionado a todas as partes da aplicação, basta clicar nos botões centrais: 'aluno', 'empresa', 'Usuarios', 'formularios','questões' e 'Dashboard': 
  
-  <img src="https://user-images.githubusercontent.com/98817915/170257911-018230aa-6e9d-4abf-b2e0-520ae333e577.png" alt="home" width="500" height="300">
 
 <br>
 
 - `Aluno`: Na secção do aluno, assim que acessada ela mostrará uma lista com todos os alunos cadastrados na aplicação. Ao final de cada nome de um aluno, pode se notar 3 botões: ao clicar no lápis, o usuario será redirecionado a página de edição dos dados do aluno, ao clicar na lata do lixo, poderá deletar esse aluno, e ao clicar no olho, irá encontrar todos os dados que se tem sobre esse aluno. Ademais, acima da tabela é possivel notar um botão "Cadastrar aluno", que ao clicado, redirecionará o usuario a página onde esse poderá adicionar um novo aluno a aplicação. Por fim, logo abaixo desse botão, encontrará um filtro, onde é possivel vizualizar a lista de aluno separada por suas turmas. 
 
-  <img src="https://user-images.githubusercontent.com/98817915/170261412-1b40c837-b864-44e8-941e-96b847748489.png" alt="Alunos" width="500" height="300">
+
   
  <br>
 
 - `Empresas parceiras`: Na secção das empresas parceiras, assim que acessada ela mostrará uma lista com todos as empresas cadastradas na aplicação. Ao final de cada nome de empresa, pode se notar 3 botões: ao clicar no lápis, o usuario será redirecionado a página de edição dos dados da empresa, ao clicar na lata do lixo, poderá deletar essa empresa parceira, e ao clicar no olho, irá encontrar todos os dados que se tem sobre essa empresa parceira. Ademais, acima da tabela é possivel notar um botão "Cadastrar empresa", que ao clicado, redirecionará o usuario a página onde esse poderá adicionar uma nova empresa à aplicação.
 
-  <img src="https://user-images.githubusercontent.com/98817915/170263213-2aa0eaf7-2038-441c-94bb-f83d671fed31.png" alt="Empresas parceiras" width="500" height="300">
+ 
   
 <br>
 
 - `Usuário`: Na secção de usuários, assim que acessada ela mostrará uma lista com todos os usuários cadastrados na aplicação. Em ações é possível perceber que existem 3 botões: ao clicar no lápis, o usuário será redirecionado a página de edição dos dados do usuário; ao clicar no ícone da lixeira, poderá deletar o usuário cadastrado; e ao clicar no ícone visualizar, irá encontrar todos os dados que se tem acesso sobre esse usuário. Ademais, acima da tabela é possível notar o botão "Novo usuário", que ao clicar, redirecionará para a página onde este poderá adicionar novos usuários à aplicação. 
 
-  <img src="https://user-images.githubusercontent.com/98817915/170265118-9afac3c5-9647-4f11-9a83-c025b121e693.png" alt="Usuários" width="500" height="300">
 
 <br>
 
 - `Formulários`: Nesta secção pode-se adicionar um novo formulário, visualizar o que foi cadastrado, pesquisar todos os formulários que já foram adicionados no sistema de acordo com a sua segmentação específica. Em ações é possível perceber que existem 2 botões: ao clicar no ícone do lápis, o usuário será redirecionado à página de edição das questões e ao clicar no ícone visualizar, irá encontrar todos os dados que se tem cadastrado em um formulário específico.
  
-  <img src="https://user-images.githubusercontent.com/98817915/170686221-b777b4a9-0f3f-440c-bc0c-1a8d83eee6d0.png" alt="Formulários" width="500" height="300">
 
 <br>
 
 - `Questões`: Nesta secção pode-se adicionar uma nova questão a algum formulário especifico, visualizar as que foram cadastradas e pesquisar todas as questões que já foram adicionados no sistema de acordo com a sua segmentação. Em ações é possível perceber que existem 3 botões: ao clicar no ícone do lápis, o usuário será redirecionado à página de edição daquela questão, ao clicar na lixeira, poderá deletar aquela questão, e ao clicar no ícone de vizualizar, irá encontrar todos os dados que se tem cadastrado sobre aquela questão, junto com um DashBord.
 
-  <img src="https://user-images.githubusercontent.com/98817915/170266891-75cefa9b-37c6-4c07-842f-a50fc4f740ac.png" alt="Questões" width="500" height="300">
+
   
 <br>
 
 - `Dashboard`: Quando na página de questões se clica no icone de vizualizar uma questão especifica, ao lado de cada uma, aparecerá um DashBord com o resultado de todas as respostas daquela questão. Justamente por isso, ele só poderá ser vizivel quando os formulários associados aquela questão já estiverem sido respondidos.  
   
-  <img src="https://user-images.githubusercontent.com/98817915/170685924-ccdf9aec-1fa8-48aa-9410-a96e2ebd46bd.png" alt="Dashbord" width="500" height="300">
+
 
 <br>
 
