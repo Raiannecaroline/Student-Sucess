@@ -57,15 +57,8 @@ public class FormularioService {
      * Função com o objetivo de validar se o email digitado em um formulário, já está cadastrado na base de dados do nosso sistema
      * @param formulario o formulário em questão
      */
-        public void validar(Formularios formulario) {
+    public void validar(Formularios formulario) {
 
-        Alunos byEmail = alunoRepository.findByEmail(formulario.getEmail());
-
-        if(byEmail.isEmail_30_FormularioRespondido()){
-            throw new BadRequestException("Não foi possivel validar a sua resposta, email:  " + byEmail.getNome() + " " +
-                    "já respondeu esse formulario.");
-
-        }
         if (!alunoRepository.existsByEmail(formulario.getEmail())) {
             if (!parceirosRepository.existsByEmail(formulario.getEmail())) {
                 throw new BadRequestException("Email não encontrado em nossa base de dados. Verifique seu email e tente novamente.");

@@ -21,7 +21,7 @@ public class AlunosDto {
     @NotBlank
     private String nome;
 
-    @CPF(message = "Número do registro de contribuinte individual brasileiro (CPF) inválido.")
+    @CPF
     private String cpf;
 
     @Email
