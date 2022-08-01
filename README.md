@@ -1,4 +1,4 @@
-# BC13_StudentSuccess
+
 <h1 align="center">Olá 👋, nós somos o grupo Student Sucess.</h1> 
 <h2 align="center"> Formado por: Ana Carolina, Camila Tomazini, Cecília Guimarães, Egysella Firmo, Filipe Lopes, Giovane Avelino, Isis Ferreira, Pollyana Oliveira, Raiane Caroline, Rebeca Nunes, Roberta Chang e Sanya P. Dias</h2>
 <h3 align="center">Programa de pesquisa de satisfação de alunos e parceiros</h3>
