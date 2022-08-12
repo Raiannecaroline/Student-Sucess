@@ -107,3 +107,4 @@ Desenvolvemos esse projeto com o objetivo de auxiliar a gerência na tomada de d
 ## :lock: Licença 
 **StudentSuccess é licenciado pela
  <a href="https://soulcodeacademy.org" target="_blank"> SoulCode </a>**
+##
